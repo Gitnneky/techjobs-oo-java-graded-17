@@ -20,7 +20,7 @@ public class TestTaskTwo extends AbstractTest {
         Class theClass = getClassByName("Location");
         Constructor theConstructor = null;
         try {
-            theConstructor = theClass.getConstructor(String.class);
+           theConstructor = theClass.getConstructor(String.class);
         } catch (NoSuchMethodException e) {
             fail("Location does not have a constructor that takes a String parameter");
         }
